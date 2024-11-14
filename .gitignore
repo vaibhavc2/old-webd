@@ -203,3 +203,11 @@
 # Local development
 **/local.settings.json
 **/local.config.json
+
+**/vid
+**/pics-videos
+**/.mp4
+**/.mkv
+**/.jpg
+**/.png
+**/.jpeg
