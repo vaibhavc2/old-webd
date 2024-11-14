@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS Selectors</title>
+    <style>
+        ul {
+            list-style: none;
+            display: inline;
+        }
+        div p {
+            /* selects p even if it is not the direct child of div */
+        }
+        div > p {
+            /* selects p only if it is the direct child of div */
+        }
+        div + p {
+            /* selects that p which is the next sibling of div under a same parent */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div>
+            <ul>
+                <li><p>This is a para in li</p></li>
+            </ul>
+        </div>
+        <div>
+            <p> This is a paragraph</p>
+        </div>
+        <p> This is second paragraph</p>
+    </div>
+    <p> This is the third paragraph</p>
+</body>
+</html>

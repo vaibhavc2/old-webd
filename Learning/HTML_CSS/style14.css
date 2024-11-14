@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 3px dotted red;
+    padding: 10px;
+    background-color: rgb(226, 224, 209);
+    height: 4000px;
+}
+
+.box {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    margin: 2px auto;
+    display: inline-block;
+    padding: 10px;
+}
+#box3 {
+    /* position: fixed;
+    right: 50px;
+    bottom: 50px; */
+
+    /* position: absolute;
+    top: 84px;
+    left: 84px; */
+
+    /* position: relative;
+    top: 75px;
+    right: 80px; */
+    
+    position: sticky;
+    top: 0px;
+
+}
+
+/* Types of Positions: */
+
+/* Static: It is the default position of HTML elements. */
+
+/* Relative: Positions the element relative to its normal positon and will leave a gap at its normal position  */
+
+/* Absolute: An element with the absolute position will move according to the position of its parent element.
+In the absence of any parent element, the HTML element will be placed relative to the page. */
+
+/* Fixed: An element with position:fixed; will remain stuck to a specific position even after the page is scrolled.
+This position property is used when we want to keep an HTML element at a fixed spot no matter where on the page the user is. 
+It positions the element relative to the browser window. */
+
+/* Sticky: Positions the element relative to the users scroll position. It is used to create a sticky navbar/menu among other things. */

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="dist/img/favicon-main.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMS Login</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <!-- <div class="container">
+        <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+            Login
+        </button>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true"> -->
+    <div class="modal-dialog modal-dialog-centered" role="document" id="main-container">
+        <div class="modal-content" style="background-color: rgb(218, 218, 218, 0.8);;">
+            <div class="modal-header border-bottom-0">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button> -->
+            </div>
+            <div class="modal-body">
+                <div class="form-title text-center">
+                    <h4>UMS Login</h4>
+                </div>
+                <div class="d-flex flex-column text-center">
+                    <div id="ctn">
+                        <form class="form-group" name="form1" action="#" onsubmit="required()"  method="post" required>
+                            <input type="text" class="form-control" name="text1" placeholder="UMS ID..." id="ums-id" onkeyup="inputSuccess()">
+                            <!-- <span style="color: red !important; position: relative; bottom: 28px; left: 175px;">*</span> -->
+                        </form>
+                        <form class="form-group" name="form2" action="#" onsubmit="required()"  method="post" required>
+                            <input type="password" class="form-control password-field" name="password1" placeholder="Password..." id="passwd" onkeyup="inputSuccess()">
+                            <!-- <span style="color: red !important; position: relative; bottom: 28px; left: 175px;">*</span> -->
+                        </form>
+                        <button type="submit" class="btn btn-info btn-block btn-round" onclick="logInFunction(); window.location.href='index.html'" id="login-btn" disabled>Login</button>
+                        <div style="display: block; margin: 10px; color: rgb(80, 80, 80);">
+                            <input type="checkbox" name="stay-logged-in" id="stay-logged-in" style="margin-right: 0.5rem;" checked>Stay logged in
+                        </div>
+                    </div>
+
+                    <div class="text-center text-muted delimiter">or use a social network</div>
+                    <div class="d-flex justify-content-center social-buttons">
+                        <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                            data-placement="top" title="Google">
+                            <i class="fab fa-google"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                            data-placement="top" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                            data-placement="top" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip"
+                            data-placement="top" title="Linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                        </di>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <div class="signup-section">Not enrolled yet? <a href="https:admit.lpu.in/" class="text-info" style="text-decoration: underline;"> Sign Up</a></div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+
+    <!-- jQuery, Popper JS & Bootstrap JS -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+    <script src="/scripts/login.js"></script>
+
+</body>
+
+</html>

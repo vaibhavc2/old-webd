@@ -1,0 +1,67 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+html {
+    color-scheme: dark !important;
+    scroll-behavior: smooth !important;
+}
+
+/* Scrollbars */
+
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff !important;
+    width: 12px !important;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+    background-color: #fff !important;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0 !important;
+    border-radius: 16px !important;
+    border: 3px solid #fff !important;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+    display:none !important;
+}
+
+/* Other Styling */
+
+body::before {
+    content: "";
+    display: block;
+    height: 3.56rem;
+    background-color: rgb(33, 37, 41) !important;
+}
+
+nav.navbar.bg-dark {
+    background-color: rgb(33, 37, 41, 0.85) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+#map {
+    height: 150px;
+    width: 250px;
+}
+
+@media screen and (min-width: 992px) {
+    #abt-enrollment {
+        margin-bottom: 2rem;
+    }
+    .news-input {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #map {
+        height: 300px;
+        width: 400px;
+    }
+}

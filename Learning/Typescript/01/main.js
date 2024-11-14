@@ -1,0 +1,27 @@
+// // let count = 5;
+// // count = 'z';
+// var b;
+// b = 'hi';
+// b = 34;
+// b = true;
+// // let a: number;
+// // a = 'H';
+// var variable;
+// variable = false;
+// var str;
+// str = 'Great.';
+// var numArray = [1, 2, 3, 4, 5];
+// var arr = [1, 'b', true];
+// var colorRed = 0;
+// var colorGreen = 1;
+// var colorBlue = 2;
+// var color;
+// (function (color) {
+//     color[color["red"] = 0] = "red";
+//     color[color["green"] = 1] = "green";
+//     color[color["blue"] = 2] = "blue";
+// })(color || (color = {}));
+// ;
+// var backgroundColor = color.red;
+// var textColor = color.green;
+// console.log(color.red);

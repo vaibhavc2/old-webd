@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranform Property in CSS</title>
+    <style>
+        .container {
+            height: 25vh;
+            width: 50%;
+            margin: 200px auto;
+            border: 3px solid grey;
+            background-color: black;
+            display: flex;
+            border-radius: 12px;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            flex-basis: 50%;
+            /* height: 35%; */
+            border-radius: 12px;
+            background-color: red;
+            border: 2px solid rgb(255, 169, 159);
+            color: white;
+            height: 40%;
+            font-size: 35px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* transform: rotate(25deg); */
+            transition: all 2s ease-in-out 150ms;
+        }
+        .box:hover {
+            /* transform: rotate(25deg); */
+            /* transform: rotate(360deg); */
+            /* transform: scale(1.25); */
+            /* transform: translateX(100px);
+            transform: translateY(100px); */
+            transform: translate(500px, 100px);
+            /* translate(x, y) */
+            /* transform: skew(150deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+# ts-learn.ts
+/node_modules
+tsconfig.json
+/.vscode

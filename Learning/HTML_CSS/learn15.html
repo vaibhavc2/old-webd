@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & z-index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        /* to use the z-index property we must first change the element's position to relative, absolute, fixed or sticky */
+        #box1 {
+            position: relative;
+            top: 34px;
+            background-color: green;
+            z-index: 1; /* the default value is 0 */
+            /* z-index is used to specify which element will come on top of others, basically it specifies the order of the stacking in case of positioned elements */
+        }
+        #box2 {
+            position: relative;
+            bottom: 49px;
+            /* display: none; */
+            /* the above completely hides the element including the space it had previously occupied */
+            /* visibility: hidden; */
+            /* the above hides the element but still reserves the space it occupies */
+            background-color: rgb(230, 32, 32);
+        }
+        #box3 {
+            background-color: rgb(36, 22, 230);
+        }
+        #box4 {
+            background-color: rgb(252, 232, 55);
+        }
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*4 -->
+    <!-- the above can be used to get 4 divs with class box and ids box1, box2 and so on...!! -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

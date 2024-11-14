@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow & text shadow</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+        }
+        .container {
+            margin: 100px 0;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .card {
+            padding: 23px 20px;
+            border: 3px solid rgb(231, 161, 161);
+            flex-basis: 25%;
+            background-color: rgb(250, 232, 210);
+            border-radius: 3%;
+            /* box-shadow: 10px 8px rgb(134, 134, 134); */
+            /* box-shadow: 10px 8px 12px rgb(134, 134, 134); */
+            box-shadow: 10px 8px 12px 3px rgb(134, 134, 134);
+            /* 'offset-y' 'offset-x' 'blur-radius' 'spread-radius' 'color' */
+            
+            /* box-shadow: -10px -8px rgb(134, 134, 134); to apply box shadow in the opposite direction, use negative values in offset-y and offset-x */
+            
+            /* box-shadow: inset 2px 3px grey;
+            to put shadow inwards the box */
+        }
+        h1 {
+            text-align: center;
+            text-shadow: 1.5px 2.8px 6px rgb(211, 209, 209);
+            /* similar to box-shadow property, but is applicable on text & 'spread-radius' is not applicable in text-shadow */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>Card-1</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error molestias omnis rerum eveniet neque ratione amet culpa, pariatur, cupiditate aspernatur suscipit blanditiis atque, tenetur odit. Doloremque delectus perferendis blanditiis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquid numquam cumque, iure repellat atque. Sunt earum quisquam tempora, quidem ut obcaecati eius rerum aspernatur voluptatibus quia consequatur aliquam ad facere molestiae magni expedita?
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>Card-2</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error molestias omnis rerum eveniet neque ratione amet culpa, pariatur, cupiditate aspernatur suscipit blanditiis atque, tenetur odit. Doloremque delectus perferendis blanditiis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquid numquam cumque, iure repellat atque. Sunt earum quisquam tempora, quidem ut obcaecati eius rerum aspernatur voluptatibus quia consequatur aliquam ad facere molestiae magni expedita?
+            </p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>Card-3</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error molestias omnis rerum eveniet neque ratione amet culpa, pariatur, cupiditate aspernatur suscipit blanditiis atque, tenetur odit. Doloremque delectus perferendis blanditiis maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquid numquam cumque, iure repellat atque. Sunt earum quisquam tempora, quidem ut obcaecati eius rerum aspernatur voluptatibus quia consequatur aliquam ad facere molestiae magni expedita?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

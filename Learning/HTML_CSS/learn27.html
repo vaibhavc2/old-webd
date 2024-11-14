@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Area & using media queries with CSS Grids</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+        .container{
+            display: grid;
+            /* gap: 1rem; */
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item{
+            background-color: rgb(112, 75, 61);
+            color: rgb(255, 255, 255);
+            border: 3px solid rgb(0, 0, 0);
+            padding: 3px;
+            margin: 3px;
+        }
+        .navbar{
+            grid-area: navbar;
+            height: 6vh;
+        }
+        .section{
+            grid-area: section;
+            height: 75vh;
+        }
+        .aside{
+            grid-area: aside;
+            height: 75vh;
+        }
+        footer{
+            grid-area: footer;
+            height: 10vh;
+        }
+        @media (max-width: 800px) {
+            .container{
+                grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            .aside{
+                display: none;
+            }
+            span {
+                display: block;
+                text-align: center;
+            }
+            .navbar {
+                height: 10vh;
+            }
+            .section {
+                height: 125vh;
+            }
+            footer {
+                height: 15vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar item">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Contact Us</span>
+        </div>
+        <div class="section item">Section Area</div>
+        <div class="aside item">Aside Area</div>
+        <footer class="item">Footer</footer>
+    </div>
+</body>
+</html>

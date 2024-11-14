@@ -1,0 +1,96 @@
+#home::before {
+    /* bottom: 1px; */
+    height: 250vh;
+}
+
+#s-container {
+    height: 350px;
+}
+
+.s-para {
+    width: 60%;
+    font-size: 1rem;
+}
+
+#s-container .text-box .h-secondary {
+    font-size: 1.4rem;
+}
+
+#img1 {
+    width: 14.5%;
+}
+
+#img2 {
+    width: 14%;
+}
+
+#img3 {
+    width: 17.5%;
+}
+
+.box {
+    width: 25%;
+}
+
+/* App-Section */
+
+#app-section {
+    position: relative;
+    top: 300px;
+    /* margin-top: 20%; */
+}
+
+#app-container{
+    height: 150px;
+}
+
+#a-head {
+    font-size: 3rem;
+    height: 100px;
+    left: 10%;
+    width: 25%;
+    bottom: 40%;
+}
+
+#a-text {
+    font-size: 1.2rem;
+    top: 90%;
+    right: 15%;
+    width: 35%;
+}
+
+#app-imgs {
+    top: 100%;
+    right: 15%;
+}
+
+#app-imgs img {
+    width: 25%;
+    margin: 2%;
+}
+
+#store-imgs {
+    bottom: 245px;
+}
+
+#store-imgs img {
+    width: 20%;
+    position: relative;
+    right: 5%;
+    top: 1%;
+}
+
+/* Food Section */
+
+#food {
+    margin-bottom: -200px;
+}
+
+#f-head {
+    padding: 20px;
+    font-size: 3rem;
+}
+
+.f-item .h-secondary {
+    font-size: 1.2rem;
+}

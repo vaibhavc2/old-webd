@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .container {
+            height: 1200px;
+            width: 95%;
+            border: 6px solid black;
+            margin: 20px auto;
+            background-color: rgb(165, 208, 248);
+            /* Initializing the container as a flexbox */
+            display: flex;
+
+            /* properties of flexbox container*/
+
+
+            flex-direction: row; 
+            /* default value is row */
+            flex-direction: column;
+            flex-direction: row-reverse;
+            /* flex-direction: column-reverse; */
+
+            
+            /* (default) */
+            flex-wrap: nowrap; 
+            flex-wrap: wrap; 
+            flex-wrap: wrap-reverse;  /* wrap in reverse */
+
+            flex-flow: row wrap; /* flex-flow: flow-direction flow-wrap */
+
+            justify-content: center; /* to horizontally center all items */
+            justify-content: space-between; /* set equal space between all items, but no space from border */
+            justify-content: space-around; /* equal space along all 4 sides of an item */
+            justify-content: space-evenly; /* equal space between all items and from the border as well */
+
+
+            align-items: flex-start; /* it positions all elements at the starting(top) of the flex container */
+            align-items: flex-end; /* it positions all elements at the bottom of the flex container, i.e. the flexbox kind of starts from the end */
+            align-items: center; /* to vertically center all items */
+            align-items: stretch;  /* default value */
+
+        }
+        .item {
+            background-color: rgb(248, 166, 152);
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            /* margin: 30px; */
+            padding: 10px;
+            text-align: center;
+        }
+        #item1 {
+            /* flex properties for a flex item */
+            order: 0; /* default is 0, higher the order, later it shows up in the container */
+            /* flex-grow: 3; */
+            flex-shrink: 2;
+            flex-basis: 300px; /* when flex-direction is set to row, this will control width, otherwise, if flex-direction is set to column, it controls height */
+        }
+        #item2 {
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+        }
+        #item3 {
+            /* flex-shrink: 3; */
+            flex: 2 0 250px;
+            /* flex-grow flex-shrink flex-basis */
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <div class="container">
+        <div class="item" id="item1">Box:1</div>
+        <div class="item" id="item2">Box:2</div>
+        <div class="item" id="item3">Box:3</div>
+    </div>
+</body>
+</html>

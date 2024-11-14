@@ -1,0 +1,272 @@
+/* Navbar */
+
+.navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 70px;
+    font-size: 18px;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navbar .logo .logo-link {
+    border-bottom: none;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Mobile nav-menu */
+
+.mobile-nav-menu {
+    width: 1.75rem;
+    flex-direction: column;
+    z-index: 1000;
+    height: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-menu .nav-menu-line {
+    height: 0.15rem;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 1000;
+    display: block;
+    width: 100%;
+    transition: all 0.45s ease-in-out;
+}
+
+/* mobile navbar hamburger menu animation */
+
+.mobile-nav-menu .nav-menu-line:first-of-type:checked,
+.mobile-nav-menu .nav-menu-line:last-child:checked {
+    transform: rotate(45deg);
+}
+
+.mobile-nav-menu .nav-menu-line:nth-child(2):checked {
+    display: none;
+}
+
+/* Showcase */
+
+.showcase {
+    height: 30rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 4.5rem;
+}
+
+.showcase p {
+    margin: 2.5rem 0;
+    font-size: 1.25rem;
+}
+
+.showcase .grid {
+    grid-template-columns: 9fr 7fr;
+    gap: 2.5rem;
+    overflow: visible;
+}
+
+.showcase-text {
+    cursor: default;
+}
+
+.showcase-form {
+    position: relative;
+    top: 2.5rem;
+    height: 29.5rem;
+    width: 400px;
+    padding: 3rem;
+    z-index: 10;
+    justify-self: end;
+}
+
+.showcase-form .form-control {
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.showcase-form .form-control input {
+    font-weight: 600;
+}
+
+.showcase-form h2 {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 0.2rem;
+    font-size: 18px;
+    height: 2.5rem;
+}
+
+.showcase-form input:focus {
+    outline: none;
+}
+
+.showcase-form .submit-btn {
+    margin: auto;
+    margin-top: 2.15rem;
+    font-size: 1.055rem;
+}
+
+.showcase-form .submit-btn:hover {
+    background-color: rgb(255, 145, 0);
+}
+
+.showcase::before,
+.showcase::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    -webkit-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+/* Stats */
+
+.stats {
+    margin-top: 125px;
+}
+
+.stats .container div {
+    margin: auto;
+    text-align: center;
+}
+
+.stats .container div div h3 {
+    margin-top: 1rem;
+}
+
+.stats-heading {
+    max-width: 500px;
+    /* font-weight: 500; */
+    font-size: 1.35rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2.5rem;
+}
+
+.stats .grid h3 {
+    font-size: 2.15rem;
+    /* font-weight: 500; */
+}
+
+.text-secondary {
+    font-size: 1.25rem;
+}
+
+/* CLI */
+
+.cli {
+    margin-top: 75px;
+    font-size: 1.1rem;
+}
+
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .container.grid *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+/* Cloud */
+
+.cloud {
+    margin-top: 4.5rem;
+    color: white;
+}
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+.cloud .container.grid .text-center .btn {
+    border: 1px solid white;
+}
+
+.cloud .grid .text-center,
+.cloud .grid img {
+    justify-self: center;
+}
+
+/* Languages */
+
+.languages .card {
+    margin: 18px 10px 40px;
+    transition: transform 0.25s ease-in-out;
+}
+
+.languages .card h4 {
+    padding-bottom: 1rem;
+}
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+/* Footer */
+
+.footer .social a {
+    margin: 0 10px;
+}
+
+.footer .social a i {
+    cursor: pointer;
+}
+
+.footer .grid nav,
+.footer .grid .social {
+    justify-self: center;
+}
+
+.footer .grid .social {
+    position: relative;
+    right: 1rem;
+}
+
+.footer .grid div * {
+    text-align: center;
+}

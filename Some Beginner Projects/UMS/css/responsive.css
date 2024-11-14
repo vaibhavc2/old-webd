@@ -1,0 +1,202 @@
+/* For ultra Large PC screens */
+
+@media only screen and (min-width: 3000px) {
+    nav .container-fluid .navbar-brand:nth-child(2) {
+        position: element('nav .container-fluid .navbar-brand:nth-child(1)');
+        transform: translateX(-120%) !important;
+    }
+    nav form.d-flex {
+        position: element('nav .container-fluid .navbar-brand:nth-child(1)');
+        transform: translateX(-37%) !important;
+    }
+}
+
+/* For very Large PC screens */
+
+@media only screen and (min-width: 2400px) {
+    nav .container-fluid .navbar-brand:nth-child(2) {
+        position: element('nav .container-fluid .navbar-brand:nth-child(1)');
+        transform: translateX(-65%);
+    }
+    nav form.d-flex {
+        position: element('nav .container-fluid .navbar-brand:nth-child(1)');
+        transform: translateX(-25%);
+    }
+}
+
+/* For Normal sized PC screens */
+
+@media only screen and (max-width: 1820px) {
+    /* .d-flex {
+        display: none !important;
+    } */
+    /* .container-fluid .navbar-brand:nth-child(2) {
+        margin: 0;
+        position: relative;
+        left: 15rem;
+    } */
+    nav form.d-flex .btn {
+        left: -2rem;
+    }
+    nav .d-flex .form-control {
+        position: relative;
+        right: 3rem;
+        width: 350px;
+    }
+    nav .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* .navbar-toggler {
+        display: initial !important;
+    } */
+    .name-photo {
+        /* //For IE, safari and chromium. */
+        zoom: 0.8;
+        /* //Only for Firefox */
+        -moz-transform: scale(0.8);
+    }
+}
+
+/* For Laptop Screens */
+
+@media only screen and (max-width: 1520px) {
+    body {
+        /* //For IE, safari and chromium. */
+        zoom: 0.8;
+        /* //Only for Firefox */
+        -moz-transform: scale(0.8);
+    }
+    .login-signup button {
+        padding-left: 0;
+        padding-right: 0;
+        width: 4rem;
+    }
+    .login-signup span {
+        font-size: smaller;
+    }
+}
+
+/* Other Laptops */
+
+@media only screen and (max-width: 1200px) {
+    nav .container-fluid .navbar-brand:nth-child(2) {
+        /* display: none !important; */
+        width: 150px;
+        position: relative;
+        left: 90px;
+    }
+    nav .container-fluid .d-flex .btn {
+        display: none !important;
+    }
+    nav .container-fluid .d-flex input {
+        position: relative !important;
+        right: 260px !important;
+    }
+    nav .container-fluid .d-flex {
+        position: element('nav .container-fluid .navbar-brand:nth-child(1)');
+        transform: translateX(85%) !important;
+    }
+    .nav-tabs {
+        width: 100%;
+    }
+    nav .navbar-collapse {
+        font-size: 20px;
+        width: 75vw;
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        /* float: right !important; */
+    }
+    footer {
+        display: none;
+    }
+}
+
+/* For large Tabs: */
+
+@media only screen and (max-width: 991px) {
+    .nav-custom-scheme {
+        height: 75px !important;
+    }
+    .nav-tabs {
+        display: none;
+    }
+    .login-signup {
+        display: none;
+    }
+    .container-fluid .navbar-brand:nth-child(1) {
+        width: 12rem;
+        margin: 0;
+        position: relative;
+        right: 1.5rem !important;
+    }
+    nav .container-fluid .d-flex {
+        display: none !important;
+    }
+    .main-wrapper-container {
+        width: 83% !important;
+        /* position: absolute;
+        top: 50%;
+        transform: translateY(57%);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto; */
+        position: relative;
+        top: 100px;
+        height: 300vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2.5fr 4fr 5fr 5fr 3fr 3fr;
+        /* gap: 3px; */
+    }
+    .health-tip {
+        display: none !important;
+    }
+    .attendance {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .timetable {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .announcements {
+        grid-row-start: 5;
+    }
+    .teacher-status {
+        grid-row-start: 6;
+    }
+    .name-photo {
+        padding: 1rem;
+        /* justify-content: space-around; */
+    }
+    /* #student-img {
+        margin-right: 3rem;
+    } */
+
+    #timetable-render object {
+        height: 735px;
+    }
+}
+
+/* For mobile phones and small tablet screens: */
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 400px) {
+    .main-wrapper-container {
+        width: 98% !important;
+    }
+    .sb-head {
+        margin: 2rem;
+    }
+    
+    .sb-attd {
+        margin: 2rem;
+    }
+}

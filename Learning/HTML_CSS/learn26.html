@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <!-- Used to make better responsive designs easily -->
+    <style>
+        /* * {
+            margin: 0;
+        } */
+        .container {
+            display: grid;
+            /* border: 3px solid black; */
+            /* padding: 1.5rem; */
+            /* grid-template-columns: 300px 100px 100px; */
+            /* grid-template-columns: 300px 200px 100px; */
+            /* grid-template-columns: 300px auto 100px; */
+            /* grid-template-columns: 300px 200px auto; */
+            /* grid-template-columns: 2fr 1fr 3fr; divides the colums in this ratio: 2:1:3 */
+            /* grid-template-columns: repeat(4, auto); */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
+            gap: 1rem;
+            /* row-gap: 3rem; */
+            /* grid-template-rows: repeat(5, auto);
+            grid-template-rows: 3fr 4fr 5fr; */
+            /* grid-auto-rows: 3fr; */
+            /* height: 90vh; */
+            /* justify-content: space-evenly; */
+
+        }
+        .item {
+            /* height: 100px;
+            width: 100px; */
+            background-color: rgb(228, 245, 135);
+            padding: 32px;
+            display: flex;
+            align-items: center;
+            border: 3px solid black;
+            border-radius: 6px;
+            justify-content: center;
+            /* width: 15vw; */
+        }
+        #item-1 {
+            background-color: #fff;
+            /* this spans 3 columns */
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            /* grid-column: 1 / span 3; */
+
+            /* this spans 3 rows */
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+            /* grid-row: 1 / span 2; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- This is a Grid -->
+        <div class="item" id="item-1">This is Item-1</div> <!-- This is a Grid item -->
+        <div class="item" id="item-2">This is Item-2</div> <!-- This is a Grid item -->
+        <div class="item" id="item-3">This is Item-3</div> <!-- This is a Grid item -->
+        <div class="item" id="item-4">This is Item-4</div> <!-- This is a Grid item -->
+        <div class="item" id="item-5">This is Item-5</div> <!-- This is a Grid item -->
+        <div class="item" id="item-6">This is Item-6</div> <!-- This is a Grid item -->
+        <div class="item" id="item-7">This is Item-7</div> <!-- This is a Grid item -->
+        <div class="item" id="item-8">This is Item-8</div> <!-- This is a Grid item -->
+        <div class="item" id="item-9">This is Item-9</div> <!-- This is a Grid item -->
+        <div class="item" id="item-10">This is Item-10</div> <!-- This is a Grid item -->
+        <div class="item" id="item-10">This is Item-11</div> <!-- This is a Grid item -->
+        <div class="item" id="item-10">This is Item-12</div> <!-- This is a Grid item -->
+    </div>
+</body>
+</html>

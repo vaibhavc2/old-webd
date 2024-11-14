@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block elements</title>
+</head>
+<body>
+    <!-- in line css is used just for seeing the in-line and block elements -->
+    <strong style="border: 2px solid blueviolet">I'm Vaibhav.</strong>
+    <p style="border: 2px solid blueviolet">I'm Vaibhav.</p>
+    <p style="border: 2px solid blueviolet">I'm Vaibhav.</p>
+    <span style="border: 2px solid rgb(127, 189, 27)">I'm Vaibhav.</span>
+    <span style="border: 2px solid blueviolet">I'm Vaibhav.</span>
+    <a href="#" style="border: 2px solid blueviolet">I'm Vaibhav.</a>
+    <div style="border: 2px solid blueviolet">I'm Vaibhav.</div>
+    <section style="border: 2px solid blueviolet">I'm Vaibhav.</section>
+    <section style="border: 2px solid blueviolet">I'm Vaibhav.</section>
+    <!-- id is a unique identifier for a unique tag -->
+    <!-- class is the property which can be set to different tags -->
+    <h1 id="main" class="blackbg"></h1>
+    <div id="dif" class="blackbg beauty-ui"></div> 
+    <!-- we can give multiple classes to a single tag like above -->
+    <!-- we haven't defined properties of these classes yet, otherwise the results will show up -->
+    <span class="blackbg"></span>
+
+    <!-- for any element, type the element & then: (Emmet)
+    put dot (.) & class to get the class prefilled
+    put dot (#) & id to get the id prefilled -->
+    <span class="hhh blackbg red" id="rtr"></span>
+    <!-- the above tag can be put easily using the following:
+    span.hhh.blackbg.red#rtr -->
+
+    <!-- Use the following trick to get multiple types of similar elements:
+    (here, 4)
+    section#cake.bg.classok.pop*4 
+    & then we can move through tab to enter the text easily in the multiple tags-->
+
+    <section id="cake" class="bg classok pop">Hello</section>
+    <section id="cake" class="bg classok pop">o</section>
+    <section id="cake" class="bg classok pop">fyi</section>
+    <section id="cake" class="bg classok pop">are</section>
+    
+</body>
+</html>

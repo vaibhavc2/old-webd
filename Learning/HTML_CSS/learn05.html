@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <!-- <link rel="stylesheet" href="1.css"> -->
+</head>
+
+<body>
+    <form action="" method="GET">
+        <header>
+            <h1 id="heading">Contact Information</h1>
+            <p id="x"><em>(Enter the following details carefully!)</em></p>
+        </header>
+        <p class="subheadings">
+            <label for="fnm">First Name:</label>  
+            <input type="text" name="fname" id="fnm" required> *
+            <!-- required attribute prompts the user that he must fill in the required section to proceed-->
+            <!-- label tag is used to have the feature that when we click on the 'First Name:' heading, the input box is automatically activated. -->
+        </p>
+        <p class="subheadings">
+            Last Name: <input type="text" name="lname" required> *
+        </p>
+        <p class="subheadings">
+            Indian Citizen? <input type="checkbox" name="icitizen" required> *
+        </p>
+        <fieldset>
+            <legend class="subheadings">Gender</legend>
+            <input type="radio" name="gender" id="ml"> Male <!-- name is for the server & id is used as an identifier for CSS-->
+            <input type="radio" name="gender" id="fml"> Female 
+            <input type="radio" name="gender" id="othr"> Other
+        </fieldset>
+        <p class="subheadings">
+            Address: <br>
+            <textarea name="address" id="add" cols="80" rows="8"></textarea>
+        </p>
+        <p class="subheadings">
+            Email: <input type="email" name="email" id="email" required> *
+        </p>
+        <p class="subheadings">
+            Pin Code: <input type="number" name="pincode" id="pin" required> *
+        </p>
+        <hr>
+        <h2>Payment Information</h2>
+        <p class="subheadings">
+            <label for="cardtype">Card Type:</label>
+            <select name="card-type" id="cardtype" required> *
+                <option value="" selected>--Select a Card Type--</option> <!-- value attribute is for server-backend purpose-->
+                <!-- selected attribute selects the option by default. Same for checked in the case of checkbox input -->
+                <!-- here it will still see as unfilled because of no value given -->
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+        </p>
+        <p class="subheadings">
+            Card Number: <input type="number" name="card_no" id="card_no" required> *
+        </p>
+        <p class="subheadings">
+            Expiration Date: <input type="date" name="exp-date" id="exp-date" required> *
+        </p>
+        <p class="subheadings">
+            CVV: <input type="password" name="cvv" id="cvv" required> *
+        </p>
+        <p class="subheadings">
+            * --> <em>Required</em>
+        </p>
+        <div>
+            <input type="submit" value="Pay Now">
+            <input type="reset" value="Reset Form">
+        </div>
+    </form>
+</body>
+
+</html>

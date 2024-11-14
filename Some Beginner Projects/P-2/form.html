@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="/css/style-form.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left" id="logo">
+            <img src="/img/icon01.png" alt="">
+        </div>
+        <div class="mid" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</li></a>
+                <li><a href="#">About Us</li></a>
+                <li><a href="index.html#courses">Courses</li></a>
+                <li><a href="#pricing">Pricing</li></a>
+                <li><a href="index.html#gallery">Gallery</li></a>
+                <li><a href="#">Blog</li></a>
+                <li><a href="#">Contact Us</li></a>
+            </ul>
+        </div>
+        <div class="right" id="btn">
+            <img src="/img/Phone_icon.png" alt="">
+            <button><a href="tel:+91 8360983651">Call Now for a FREE Trial!</a></button>
+        </div>
+    </nav>
+    <div class="form">
+        <div id="fhead">
+            Get a Hard-Core body! <span>be FIT be SEXY.</span> <div id="fh">Join Now!</div>
+        </div>
+        <form action="backend.django">
+            <div class="form-group">
+                Name: 
+                <input type="text" placeholder="Enter your name" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">
+                    <select name="gender" id="gender">
+                        <option value="" id="select"><--Select your Gender--></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-group">
+                Date of Birth: 
+                <input type="date" name="dateofbirth" id="dob" required>
+            </div>
+            <div class="form-group">
+                <div>
+                    <div>Address: </div> 
+                    <textarea name="address" id="address" cols="80" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                Email: 
+                <input type="email" name="email" id="email">
+            </div>
+        </form>
+        <button class="btn" id="submit"><strong>Submit</strong></button>
+        <hr>
+        <button class="btn" id="pay-now"><strong>Pay Now </strong><em> to avail Special Offer!</em></button>
+        <div id="discount">20% Discount available for a Limited Time!</div>
+    </div>
+</body>
+
+</html>

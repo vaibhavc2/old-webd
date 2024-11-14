@@ -1,0 +1,60 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    background-image: url('../pics-videos/4k-resolution-wallpaper_110628746_312.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.container {
+    border: 2px solid rgb(214, 94, 214);
+    margin: 45px auto;  /* top or y: 45px; x or left-right: auto */
+    /* width: fit-content; */
+    width: 1200px;
+    background-color: rgb(0, 0, 0);
+    background-image: none;
+}
+
+.item {
+    background-image: none;
+    font-family: 'Comfortaa', cursive;
+    border: 3px solid grey;
+    margin: 12px 12px; /* y   x */
+    padding: 12px 6px;
+    background-color: rgb(209, 207, 207);
+    color: rgb(68, 65, 65);
+}
+
+.para {
+    background-image: none;
+    /* width: 800px; */
+    line-height: 2em;
+}
+
+.heading {
+    background-image: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+#fruit {
+    float: left;
+    width: 47.75%;
+}
+
+#computer {
+    float: right;
+    width: 47.75%;
+}
+
+#stationery {
+    /* float: left; */
+    clear: both; 
+    /* floating items create a bad overlap with a simple fixed element just ahead. So, to fix it, we use clear! */
+}
+
+#mainhead {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+    color: whitesmoke;
+}

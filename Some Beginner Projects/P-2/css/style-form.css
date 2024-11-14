@@ -1,0 +1,234 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url("/img/young-fitness-man-studio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100%; */
+}
+
+.navbar {
+    color: white;
+    background-image: none;
+    background-color: rgba(107, 105, 105, 0.7);
+    /* transparency of header using rgba */
+    position: sticky;
+    top: 0%;
+    padding: 15px;
+    z-index: 1;
+    /* Use this to avoid the sticky navbar being overlapped by the ohter content! z-index specifies the stack order of the elements. Here, we have given the navbar the highest stack of all present elements to make it remain visible on scrolling, & avoid unnecessary overlaps. */
+}
+
+.left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    /* margin: 20px; */
+    padding: 6px;
+    position: absolute;
+    left: 100px;
+    top: -11px;
+}
+
+.mid {
+    /* border: 2px solid yellow; */
+    /* display: inline-block; */
+    margin: auto;
+    padding: 0px;
+    width: 1300px;
+}
+
+.right {
+    /* border: 2px solid rgb(22, 230, 22); */
+    display: inline-block;
+    padding: 6px;
+    position: absolute;
+    right: 100px;
+    top: 0px;
+    font-size: 18px;
+}
+
+ul {
+    margin: 0%;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 40px;
+    font-size: 18px;
+}
+
+.mid ul li a {
+    /* color: rgb(233, 231, 231); */
+    color: rgb(255, 245, 245);
+    text-decoration: none;
+}
+
+.mid ul li a:hover {
+    /* color: rgb(73, 72, 72); */
+    color: rgb(255, 141, 207);
+    text-decoration: underline;
+}
+
+.navbar .left img {
+    width: 150px;
+    filter: invert(100%);
+    /* We can always use these amazing filters in CSS like this invert function which inverts the colours! */
+    cursor: pointer;
+}
+
+.navbar .right img {
+    width: 30px;
+    margin: 0px 13px;
+    filter: invert(100%);
+    position: absolute;
+    top: 10px;
+    right: 250px;
+    cursor: pointer;
+}
+
+#btn button {
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(226, 216, 216);
+    border: 2px solid rgb(241, 102, 102);
+    border-radius: 10px;
+    margin: 0px;
+    padding: 6px 15px;
+}
+
+#btn button a {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+#btn button a:hover {
+    color: rgb(7, 143, 79);
+    font-size: large;
+}
+
+.form {
+    border: 2px solid white;
+    margin: 120px 140px;
+    padding: 20px 20px;
+    background-image: none;
+    background-color: rgb(212, 212, 212);
+    width: 30%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#fhead {
+    font-size: 28px;
+    text-align: center;
+}
+
+#fhead span {
+    font-family: 'Indie Flower', cursive;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0% 10px;
+}
+
+#fh {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 20px auto;
+    display: block;
+}
+
+.form-group input {
+    text-align: center;
+    width: 75%;
+    /* float: right; */
+    border-radius: 10px;
+    display: inline-block;
+    margin: 2px auto;
+    font-size: 20px;
+}
+#name {
+    position: relative;
+    left: 50px;
+}
+
+#dob {
+    position: relative;
+    left: 5px;
+}
+
+.form-group label select {
+    text-align: center;
+    width: 90%;
+    margin: 2px auto;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    left: 20px;
+}
+
+#address {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px auto;
+    position: relative;
+    left: 25px;
+}
+
+#email {
+    margin-top: -5px;
+    position: relative;
+    left: 50px;
+}
+
+.btn , #discount {
+    clear: both;
+}
+
+#discount {
+    font-size: larger;
+    font-style: italic;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    margin: 10px auto;
+    font-size: xx-large;
+}
+
+#submit {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(66, 50, 50);
+    color: rgb(243, 182, 174);
+    border-radius: 10px;
+}
+
+#submit:hover {
+    color: yellow;
+    font-size: 35px;
+}
+
+#pay-now {
+    font-size: 38px;
+    margin-top: 20px;
+    border: 3px solid rgb(235, 131, 131);
+    background-color: rgb(213, 188, 230);
+    border-radius: 15px;
+}
+
+#pay-now:hover {
+    color: rgb(252, 220, 76);
+    font-size: 40px;
+    background-color: rgb(218, 45, 45);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables & Custom Properties</title>
+    <style>
+        :root {
+            /* this section contains the global varibles in CSS */
+            --box-color: rgb(189, 10, 189);
+        }
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 100px 0;
+        }
+        .box {
+            --l: 300px;
+            height: var(--l);
+            /* width: 200px; */
+            flex-basis: 20%;
+            background-color: var(--box-color);
+        }
+        #box1 {
+            --b1color: red; /* this is initialization of a variable of name b1color */
+            background-color: var(--b1color);
+        }
+        #box2 {
+            background-color: blueviolet;
+        }
+        #box3 {
+            background-color: rgb(101, 156, 19);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>
